@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --principal: #230070;
+    --secundaria: #471e9e;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inicio do Header */
+
+.header{
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid var(--principal);
+    align-items: center;
+}
+
+.header-logo{
+    height: 60px;
+    margin-left: 30px;
+}
+
+.header-info{
+    color: var(--principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+.header-btn{
+    height: 50px;
+    width: 120px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--principal);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px #000000;
+}
+
+.header-btn:hover{
+    background-color: var(--secundaria);
+}
+
+/* Fim do Header */
+
+/* Inicio do Main */
+
+.main-container{
+    display: grid;
+    grid-template-areas: 
+    "selecione historico filtro"
+    ;
+    grid-template-columns: 22% 55% 22%;
+}
+
+.voltar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 30px;
+    font-weight: bold;
+}
+
+.left{
+    margin-right: 5px;
+}
+
+.voltar a{
+    text-decoration: none;
+    color: var(--principal);
+}
+
+
+.selecione{
+    display: flex;
+    flex-direction: column;
+    color: var(--principal);
+    margin-top: 30px;
+    margin-left: 30px;
+    max-width: 230px;
+    grid-area: "selecione";
+}
+
+.radio{
+    margin: 8px 0;
+}
+
+.historico{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    grid-area: "historico";
+}
+
+.historico h2{
+    margin-bottom: 30px;
+    color: var(--principal);
+}
+
+.bar-lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--principal);
+    color: #FFFFFF;
+    height: 60px;
+    width: 650px;
+}
+
+@media screen and (min-width: 1920px) {
+    .bar-lista{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--principal);
+        color: #FFFFFF;
+        height: 60px;
+        width: 950px;
+    }
+
+}
+
+.bar-lista p{
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.bar-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal);
+    color: #FFFFFF;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 60px;
+    width: 200px;
+    border-left: 2px solid #FFFFFF;
+}
+
+.bar-status span{
+    margin-bottom: 5px;
+}
+
+.status-p{
+    border-top: 2px solid #FFFFFF;
+    display: flex;
+    max-width: 200px;
+}
+
+.status-p p{
+    margin: 5px 30px;
+}
+
+
+.p{
+    color: var(--principal);
+    margin: 20px 0;
+}
+
+.barra{
+    background-color: var(--principal);
+    width: 650px;
+}
+
+@media screen and (min-width: 1920px) {
+    .barra{
+        background-color: var(--principal);
+        width: 950px;
+    }
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: var(--principal);
+    cursor: pointer;
+    box-shadow: 0px 2px 2px #000000;
+}
+
+.btn img{
+    margin-top: 5px;
+}
+
+.filtro{
+    grid-area: "filtro";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--principal);
+}
+
+.filtro-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.filtro-form select, .filtro-form input{
+    height: 50px;
+    width: 250px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--principal);
+}
+
+.filtro-btn{
+    border: none;
+    background-color: var(--principal);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px #000000;
+}
+
+.filtro-btn:hover{
+    background-color: var(--secundaria);
+}

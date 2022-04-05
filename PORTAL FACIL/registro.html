@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Portal Fácil</title>
+</head>
+<body>
+    <header class="header">
+        <a href="modulos.html"><img src="img/logo.png" alt="Portal Fácil" class="header-logo"></a>
+
+        <div class="header-info">
+            <p>Bem vindo, <strong>Washington</strong></p>
+            <p>Produto: <strong>RIOCAP</strong></p>
+        </div>
+
+        <a href="login.html"><button class="header-btn">Sair</button></a>
+    </header>
+
+    <section class="voltar">
+        <img class="left" src="img/left.svg" alt="Botão de voltar">
+        <a href="dados.html">
+            <p>Voltar</p>
+        </a>
+    </section>
+
+    <h1 class="title">Cadastro do Sorteado</h1>
+    <main>
+        <section class="extracao">
+            <h3>Dados da Extração</h3>
+
+            <form class="formulario">
+                <div class="form">
+                    <label for="data">Data do Sorteio</label>
+                    <input type="text" id="data" disabled>
+                </div>
+                <div class="form">
+                    <label for="titulo">Nº do Título</label>
+                    <input type="text" id="titulo" disabled>
+                </div>
+                <div class="form">
+                    <label for="valor">Valor Líquido</label>
+                    <input type="text" id="valor" disabled>
+                </div>
+                <div class="form">
+                    <label for="geracao">Data da Geração</label>
+                    <input type="text" id="geracao" disabled>
+                </div>
+            </form>
+        </section>
+
+        <section class="cadastro">
+            <h3>Dados Cadastrais</h3>
+
+            <form class="cadastro-form">
+                <div class="div-2col">
+                    <div class="form-2col">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" placeholder="000.000.000-00">
+                    </div>                    
+                    <div class="form-2col">
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input type="text" id="nascimento" placeholder="dd/mm/aaaa">
+                    </div>
+                </div>
+                <div class="div-cadastro">
+                    <div class="cadastro-input">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Nome Completo">
+                    </div>
+                </div>
+
+                <div class="div-2col">
+                    <div class="form-2col">
+                        <label for="profissao">Profissão</label>
+                        <input type="text" id="profissão" placeholder="Profissão">
+                    </div>                    
+                    <div class="form-2col">
+                        <label for="renda">Renda</label>
+                        <input type="text" id="renda" placeholder="Renda">
+                    </div>
+                </div>
+
+                <div class="div-2col">
+                    <div class="form-2col">
+                        <label for="pagamento">Forma de Pagamento</label>
+                        <select type="text" id="pagamento"></select>
+                    </div>                    
+                    <div class="form-2col">
+                        <label for="conta">Tipo de Conta</label>
+                        <select type="text" id="conta"></select>
+                    </div>
+                </div>
+                <div class="div-3col">
+                    <div class="form-3col">
+                        <label for="banco">Banco</label>
+                        <input type="text" id="banco" placeholder="Instituição Bancária">
+                    </div>
+                    <div class="agencia">
+                        <label for="agencia">Agência</label>
+                        <input type="text" id="agencia" placeholder="Agência">
+                    </div>
+                    <div class="form-3col">
+                        <label for="conta">Conta</label>
+                        <input type="text" id="conta" placeholder="conta com Digito">
+                    </div>
+                </div>
+                <div class="div-4col">
+                    <div class="form-4col">
+                        <label for="documento">Documento</label>
+                        <select id="documento"></select>
+                    </div>
+                    <div class="form-4col">
+                        <label for="numero">Nº do documento</label>
+                        <input type="text" id="numero" placeholder="Nº do Documento">
+                    </div>
+                    <div class="form-4col">
+                        <label for="emissao">Data de Emissão</label>
+                        <input type="text" id="emissao" placeholder="dd/mm/aaaa">
+                    </div>
+                    <div class="form-4col">
+                        <label for="orgao">Orgão Emissor</label>
+                        <input type="text" id="orgao" placeholder="Emissor">
+                    </div>
+                </div>
+                <div class="div-endereco">
+                    <div class="endereco">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" placeholder="Endereço">
+                    </div>
+                    <div class="numero">
+                        <label for="num">Número</label>
+                        <input type="text" id="numero" placeholder="Número">
+                    </div>
+                </div>
+                <div class="div-2col">
+                    <div class="complemento">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" placeholder="Complemento">
+                    </div>
+                    <div class="complemento">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" placeholder="Bairro">
+                    </div>
+                </div>
+                <div class="div-cadastro">
+                    <div class="cadastro-input">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+
+                <div class="div-cadastro">
+                    <div class="cadastro-input email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <p class="share">Autorizo o compartilhamento dos meus dados apenas para fins de pagamento de premiação.</p>
+
+        <section class="documentos">
+            <h3>Documentos Obrigatórios</h3>
+
+            <div class="doc-container">
+                <p>Anexar Título Completo (Frente)</p>
+                <div class="borda">
+                    <button class="doc-btn">Procurar</button>
+                    <button class="doc-btn">Cancelar</button>
+                </div>
+            </div>
+            <div class="doc-container">
+                <p>Anexar Docuemnto com Foto</p>
+                <div class="borda">
+                    <button class="doc-btn">Procurar</button>
+                    <button class="doc-btn">Cancelar</button>
+                </div>
+            </div>
+            <div class="doc-container">
+                <p>Anexar Comprovante de Residência</p>
+                <div class="borda">
+                    <button class="doc-btn">Procurar</button>
+                    <button class="doc-btn">Cancelar</button>
+                </div>
+
+                <div class="salvar">
+                    <button>Salvar</button>
+                    <button>Cadastrar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

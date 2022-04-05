@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/historico.css">
+    <title>Portal Fácil</title>
+    
+</head>
+<body>
+    <header class="header">
+        <a href="modulos.html"><img src="img/logo.png" alt="Portal Fácil" class="header-logo"></a>
+
+        <div class="header-info">
+            <p>Bem vindo, <strong>Washington</strong></p>
+            <p>Produto: <strong>RIOCAP</strong></p>
+        </div>
+
+        <a href="login.html"><button class="header-btn">Sair</button></a>
+    </header>
+
+    <section class="voltar">
+        <img class="left" src="img/left.svg" alt="Botão de voltar">
+        <a href="modulos.html">
+            <p>Voltar</p>
+        </a>
+
+    </section>
+
+    <main class="main-container">
+
+        <section class="selecione">
+            <h3>Selecione</h3>
+    
+            <form class="selecione-form">
+    
+                <div class="radio">
+                    <input type="radio" id="sorteado">
+                    <label for="sorteado">Sorteado a Informar (0)</label>
+                </div>
+    
+                <div class="radio">
+                    <input type="radio" id="pago">
+                    <label for="pago">Pago (0)</label>
+                </div>
+    
+                <div class="radio">
+                    <input type="radio" id="analise">
+                    <label for="analise">Em Análise (0)</label> 
+                </div>
+    
+                <div class="radio">
+                    <input type="radio" id="erro">
+                    <label for="erro">Com Erro (0)</label>
+                </div>
+    
+                <div class="radio">
+                    <input type="radio" id="salvo">
+                    <label for="salvo">Salvo (0)</label>
+                </div>
+    
+                <div class="radio">
+                    <input type="radio" id="pagamento">
+                    <label for="pagamento">Liberado para Pagamento (0)</label>
+                </div>
+    
+            </form>
+        </section>
+    
+        <section class="historico">
+
+            <h2>Histórico de Solicitações</h2>
+
+            <div class="bar-lista">
+                <p>Data de Entrada</p>
+                <p>data do Sorteio</p>
+                <p>Número do título</p>
+
+                <div class="bar-status">
+                    <span>Status</span>
+                    <div class="status-p">
+                        <p>Data</p>
+                        <p>Descrição</p>
+                    </div>
+                </div>
+            </div>
+            <p class="p">Não há itens para exibir</p>
+
+            <div class="barra">.</div>
+
+            <div class="buttons">
+                <button class="btn"><img src="img/chevrons-left.svg" alt=""></button>
+                <button class="btn"><img src="img/chevron-right.svg" alt=""></button>
+                <button class="btn"><img src="img/chevron-left.svg" alt=""></button>
+                <button class="btn"><img src="img/chevrons-right.svg" alt=""></button>
+            </div>
+        </section>
+    
+        <section class="filtro">
+            <h3>Filtro de Busca</h3>
+
+            <form class="filtro-form">
+                <label for="cpf">Buscar por:</label>
+                <select id="cpf"></select>
+                <input type="text" placeholder="000.000.000-00">
+
+                <input class="filtro-btn" type="submit" id="Buscar" value="Buscar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

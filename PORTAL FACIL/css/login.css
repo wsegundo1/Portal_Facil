@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --principal: #230070;
+    --secundaria: #471e9e;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 100vh;
+}
+
+.logo{
+    margin-top: 250px;
+    height: 250px;
+}
+
+.logo-form{
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    margin: 0 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1920px) {
+    .formulario{
+        margin: 0 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form label{
+    color: var(--principal);
+}
+
+.form input{
+    padding: 0 10px;
+    height: 50px;
+    width: 300px;
+    margin: 10px 0;
+    border: 1px solid var(--principal);
+    border-radius: 9px;
+}
+
+.form .btn-form{
+    background-color: var(--principal);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 9px;
+    margin: 20px 0;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px #000000;
+}
+
+
+.btn-form:hover{
+    background-color: var(--secundaria);
+}
+
+.txt-senha{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--principal);
+}
+
+.txt-senha:hover{
+    text-decoration: underline;
+}

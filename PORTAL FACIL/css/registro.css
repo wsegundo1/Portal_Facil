@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --principal: #230070;
+    --secundaria: #471e9e;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inicio do Header */
+
+.header{
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid var(--principal);
+    align-items: center;
+}
+
+.header-logo{
+    height: 60px;
+    margin-left: 30px;
+}
+
+.header-info{
+    color: var(--principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+.header-btn{
+    height: 50px;
+    width: 120px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--principal);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px #000000;
+}
+
+.header-btn:hover{
+    background-color: var(--secundaria);
+}
+
+/* Fim do Header */
+
+.voltar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 30px;
+    font-weight: bold;
+}
+
+.left{
+    margin-right: 5px;
+}
+
+.voltar a{
+    text-decoration: none;
+    color: var(--principal);
+}
+
+.title{
+    color: var(--principal);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.extracao h3{
+    color: var(--principal);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.form label{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--principal);
+}
+
+.form input{
+    height: 50px;
+    border: 1px solid var(--principal);
+    border-radius: 9px;
+}
+
+.cadastro h3{
+    color: var(--principal);
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cadastro{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.div-2col{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.cadastro label{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--principal);
+}
+
+.cadastro input{
+    height: 50px;
+    border: 1px solid var(--principal);
+    border-radius: 9px;
+    padding-left: 10px;
+}
+
+.form-2col{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+.form-2col input, .form-2col select{
+    width: 300px;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid var(--principal);
+}
+
+.div-cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro-input{
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    margin: 5px 0;
+}
+
+.div-3col{
+    display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+.form-3col{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+
+.agencia{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.div-4col{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.form-4col select{
+    height: 50px;
+    width: 148px;
+    border: 1px solid var(--principal);
+    border-radius: 9px;
+}
+
+.form-4col{
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    margin: 10px 5px;
+}
+
+.div-endereco{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+    width: 463px;
+}
+
+.numero{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+    width: 148px;
+}
+
+.complemento{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    width: 300px;
+}
+
+.email{
+    margin: 10px 0 ;
+}
+
+.share{
+    text-align: center;
+    font-size: 12px;
+    color: var(--principal);
+}
+
+.documentos{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.documentos h3{
+    margin: 40px 0;
+    color: var(--principal);
+}
+
+.doc-container{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.doc-container p{
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: var(--principal);
+}
+
+.borda{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--principal);
+    border-radius: 50px;
+    padding-left: 20px;
+    height: 80px;
+    width: 700px;
+}
+
+.doc-btn{
+    height: 40px;
+    width: 80px;
+    margin: 0 9px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--principal);
+    box-shadow: 0px 2px 5px #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.doc-btn:last-child{
+    background-color: var(--secundaria);
+}
+
+.salvar{
+    display: flex;
+    margin: 40px 0;
+    justify-content: center;
+}
+
+.salvar button{
+    margin: 0 20px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--principal);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0px 2px 5px #000000;
+    cursor: pointer;
+}
+
+.salvar button:first-child{
+    background-color: #FFFFFF;
+    border: 2px solid var(--principal);
+    color: var(--principal);
+    box-shadow: none;
+}
